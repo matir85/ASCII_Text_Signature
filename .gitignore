@@ -1,0 +1,59 @@
+# Project exclude paths
+/.gradle/
+/ASCII Text Signature/task/build/
+/ASCII Text Signature/task/out/
+/ASCII Text Signature/task/out/production/classes/
+/Problems/A small version of the Battleship game/out/
+/Problems/A small version of the Battleship game/out/production/classes/
+/Problems/Balance checker/out/
+/Problems/Balance checker/out/production/classes/
+/Problems/Beyond the word/out/
+/Problems/Beyond the word/out/production/classes/
+/Problems/Collatz conjecture/out/
+/Problems/Collatz conjecture/out/production/classes/
+/Problems/Convert a date/out/
+/Problems/Convert a date/out/production/classes/
+/Problems/Count the numbers/out/
+/Problems/Count the numbers/out/production/classes/
+/Problems/Find the first occurrence of the word  the/out/
+/Problems/Find the first occurrence of the word  the/out/production/classes/
+/Problems/FTN-Numbers/out/
+/Problems/FTN-Numbers/out/production/classes/
+/Problems/Getting letters from the Alphabet/out/
+/Problems/Getting letters from the Alphabet/out/production/classes/
+/Problems/Individual taxes/out/
+/Problems/Individual taxes/out/production/classes/
+/Problems/Is it here/out/
+/Problems/Is it here/out/production/classes/
+/Problems/Just checking/out/
+/Problems/Just checking/out/production/classes/
+/Problems/Move the first N characters/out/
+/Problems/Move the first N characters/out/production/classes/
+/Problems/Palindrome/out/
+/Problems/Palindrome/out/production/classes/
+/Problems/Piece of alphabet/out/
+/Problems/Piece of alphabet/out/production/classes/
+/Problems/Playing with time/out/
+/Problems/Playing with time/out/production/classes/
+/Problems/Rickrolling/out/
+/Problems/Rickrolling/out/production/classes/
+/Problems/Right Rotation/out/
+/Problems/Right Rotation/out/production/classes/
+/Problems/Squares of natural numbers/out/
+/Problems/Squares of natural numbers/out/production/classes/
+/Problems/Strings as objects/out/
+/Problems/Strings as objects/out/production/classes/
+/Problems/The army of units/out/
+/Problems/The army of units/out/production/classes/
+/Problems/The information about a person/out/
+/Problems/The information about a person/out/production/classes/
+/Problems/The number of digits/out/
+/Problems/The number of digits/out/production/classes/
+/Problems/The product of numbers from a to b/out/
+/Problems/The product of numbers from a to b/out/production/classes/
+/Problems/The sequence 1 2 2 3 3 3/out/
+/Problems/The sequence 1 2 2 3 3 3/out/production/classes/
+/Problems/The sum of elements/out/
+/Problems/The sum of elements/out/production/classes/
+/Problems/Unique characters/out/
+/Problems/Unique characters/out/production/classes/
