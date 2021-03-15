@@ -28,12 +28,20 @@ fun main() {
     var longerString = if (nameArr.size > statusArray.size)  nameArr.size
     else statusArray.size
 
+    // Obliczanie wielkości obramowania
+    val spaceName = spaceName(name, stat)
+    val spaceStatus = spaceStatus(name, stat)
+    val longText = borderLong(name, stat)
 
-    printName(nameArr)
-//    status(statusArray)
+    // Panel wyświetlający
+    println("8".repeat(longText))
+    printName(nameArr, spaceName)
+    status(statusArray, spaceStatus)
+    println("8".repeat(longText))
 }
 
-fun status(statusArray: CharArray) {
+// Znaki statusu
+fun status(statusArray: CharArray, space: Int) {
     val letters = mapOf(
         ("a" to listOf("____", "|__|", "|  |")),
         ("b" to listOf("___ ", "|__]", "|__]")),
@@ -70,13 +78,13 @@ fun status(statusArray: CharArray) {
             newStatus[i] += "${letters["$j"]?.get(i)} "
         }
     }
-    println("${newStatus[0]}")
-    println("${newStatus[1]}")
-    println("${newStatus[2]}")
+    println("88  " + " ".repeat(space) + newStatus[0] + " ".repeat(space) + " 88")
+    println("88  " + " ".repeat(space) + newStatus[1] + " ".repeat(space) + " 88")
+    println("88  " + " ".repeat(space) + newStatus[2] + " ".repeat(space) + " 88")
 
 }
 
-fun printName(nameArr: CharArray) {
+fun printName(nameArr: CharArray, space: Int) {
     // wczytanie pliku z czcionką
     val newLetter =
         "F:\\Programowanie\\NaukaKotlin\\ASCII Text Signature\\ASCII Text Signature\\task\\src\\signature\\roman.txt"
@@ -105,14 +113,36 @@ fun printName(nameArr: CharArray) {
             }
         }
     }
-    println("  ${newName[0]}  ")
-    println("  ${newName[1]}  ")
-    println("  ${newName[2]}  ")
-    println("  ${newName[3]}  ")
-    println("  ${newName[4]}  ")
-    println("  ${newName[5]}  ")
-    println("  ${newName[6]}  ")
-    println("  ${newName[7]}  ")
-    println("  ${newName[8]}  ")
-    println("  ${newName[9]}  ")
+    println("88  " + " ".repeat(space) + newName[0] + " ".repeat(space) + " 88")
+    println("88  " + " ".repeat(space) + newName[1] + " ".repeat(space) + " 88")
+    println("88  " + " ".repeat(space) + newName[2] + " ".repeat(space) + " 88")
+    println("88  " + " ".repeat(space) + newName[3] + " ".repeat(space) + " 88")
+    println("88  " + " ".repeat(space) + newName[4] + " ".repeat(space) + " 88")
+    println("88  " + " ".repeat(space) + newName[5] + " ".repeat(space) + " 88")
+    println("88  " + " ".repeat(space) + newName[6] + " ".repeat(space) + " 88")
+    println("88  " + " ".repeat(space) + newName[7] + " ".repeat(space) + " 88")
+    println("88  " + " ".repeat(space) + newName[8] + " ".repeat(space) + " 88")
+    println("88  " + " ".repeat(space) + newName[9] + " ".repeat(space) + " 88")
+}
+
+// Obliczanie długości obramowania górengo i dolnego
+fun borderLong(name: String, status: String): Int {
+    val nameLong = name.length * 11 + 10
+    val statusLong = status.length * 5 + 6
+    if (nameLong > statusLong) return nameLong
+    else return statusLong
+}
+
+// Obliczanie ilości pustych znaków od obramowania do poczatku litery
+fun spaceName(name: String, status: String): Int {
+    val nameLong = name.length * 11 + 10
+    val statusLong = status.length * 5 + 6
+    if (nameLong >= statusLong) return 0
+    else return (statusLong - nameLong) / 2 - 2
+}
+fun spaceStatus(name: String, status: String): Int {
+    val nameLong = name.length * 11 + 10
+    val statusLong = status.length * 5 + 6
+    if (nameLong >= statusLong) return (nameLong - statusLong)  / 2
+    else return 0
 }
